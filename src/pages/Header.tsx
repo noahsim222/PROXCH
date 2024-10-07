@@ -25,12 +25,12 @@ const Header: React.FC = () => {
   }, [mobileMenu])
 
   return (
-    <nav className="flex justify-between items-center fixed top-0 left-1/2 -translate-x-1/2 max-w-[1280px] w-full px-16 py-5 z-10 bg-gray-100 shadow-xl">
+    <nav className="flex justify-between items-center fixed top-0 left-1/2 -translate-x-1/2 max-w-[1280px] w-full px-5 sm:px-8 md:px-16 py-5 z-10 bg-gray-100 shadow-xl max-[1280px]:mx-auto max-[1280px]:w-[calc(100%-2rem)] max-[360px]:w-full">
       <NavLink to="/">
         <span className="sr-only">ProXch</span>
-        <span className="font-pavelt text-2xl font-bold">Pro Xch</span>
+        <span className="text-2xl font-bold font-pavelt">Pro Xch</span>
       </NavLink>
-      <div className="hidden md:flex gap-10">
+      <div className="hidden gap-10 md:flex">
         <NavLink to="/about">
           {
             ({ isActive }: {isActive: boolean}) => (
@@ -46,6 +46,15 @@ const Header: React.FC = () => {
               <span
                 className={`${isActive ? 'text-indigo-600 border-indigo-600' : 'hover:text-indigo-600 hover:border-indigo-600'} text-lg font-semibold p-1 border-b-2 border-transparent transition-colors duration-500 ease-in-out`}
               >Process</span>
+            )
+          }
+        </NavLink>
+        <NavLink to="/services">
+          {
+            ({ isActive }: {isActive: boolean}) => (
+              <span
+                className={`${isActive ? 'text-indigo-600 border-indigo-600' : 'hover:text-indigo-600 hover:border-indigo-600'} text-lg font-semibold p-1 border-b-2 border-transparent transition-colors duration-500 ease-in-out`}
+              >Services</span>
             )
           }
         </NavLink>
@@ -88,6 +97,16 @@ const Header: React.FC = () => {
                   onClick={() => setMobileMenu(false)}
                   className={`${isActive ? 'text-white bg-indigo-600' : 'hover:text-white hover:bg-indigo-600'} text-lg font-semibold py-2 transition-colors duration-500 ease-in-out border-b-2`}
                 >Process</p>
+              )
+            }
+          </NavLink>
+          <NavLink to="/services">
+            {
+              ({ isActive }: {isActive: boolean}) => (
+                <p
+                  onClick={() => setMobileMenu(false)}
+                  className={`${isActive ? 'text-white bg-indigo-600' : 'hover:text-white hover:bg-indigo-600'} text-lg font-semibold py-2 transition-colors duration-500 ease-in-out border-b-2`}
+                >Services</p>
               )
             }
           </NavLink>

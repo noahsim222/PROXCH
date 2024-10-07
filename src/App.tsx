@@ -7,6 +7,7 @@ import About from './pages/About';
 import Process from './pages/Process';
 import Contact from './pages/Contact';
 import NoPage from './pages/NoPage'
+import Services from './pages/Services';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path='about' element={<About />} />
           <Route path="process" element={<Process />} />
+          <Route path="services" element={<Services />} /> 
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NoPage />} />
         </Route>

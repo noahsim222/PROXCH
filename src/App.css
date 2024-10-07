@@ -8,8 +8,7 @@
   box-shadow: 0 0 50px 0px gray;
 }
 
-body {
-}
+body {}
 
 .logo {
   height: 6em;
@@ -17,9 +16,11 @@ body {
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -28,6 +29,7 @@ body {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -52,6 +54,7 @@ body {
     opacity: 0;
     transform: scale(0.95);
   }
+
   to {
     opacity: 1;
     transform: scale(1);
@@ -60,4 +63,19 @@ body {
 
 .showDropdown {
   animation: dropdown 300ms ease-in-out;
+}
+
+@media screen and (max-width: 1280px) {
+  #root {
+    padding: 2rem 1rem;
+    margin: 0 1rem;
+  }
+
+}
+
+@media screen and (max-width: 360px) {
+  #root {
+    padding: 2rem 0.5rem;
+    margin: 0 0rem;
+  }
 }
