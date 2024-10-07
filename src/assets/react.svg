@@ -1,0 +1,28 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 300 100"
+  className="w-32 h-auto"  
+>
+  <g fill="none" stroke="currentColor" strokeWidth="2">
+    <text
+      x="10"
+      y="50"
+      fontFamily="Pavelt, sans-serif" 
+      fontSize="40"
+      fontWeight="bold"
+      fill="#4F46E5"
+    >
+      Pro
+    </text>
+    <text
+      x="80"
+      y="50"
+      fontFamily="Pavelt, sans-serif" 
+      fontSize="40"
+      fontWeight="bold"
+      fill="#4F46E5"
+    >
+      Xch
+    </text>
+  </g>
+</svg>

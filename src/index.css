@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Pavelt';
+  src: url('./fonts/Pavelt-JRjpM.ttf')format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pavelt';
+  src: url('./fonts/Pavelt-VG24B.otf')format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
